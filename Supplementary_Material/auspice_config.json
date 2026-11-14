@@ -1,0 +1,84 @@
+{
+  "title": "Real-time tracking of measles virus evolutionary and transmission dynamics",
+  "maintainers": [
+    {"name": "D. Collins Owuor", "url": ""},
+    {"name": "Nextstrain", "url": "https://nextstrain.org/"}
+  ],
+  "data_provenance": [
+    {
+      "name": "GenBank",
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
+    },
+    {
+      "name": "Pathoplexus",
+      "url": "https://pathoplexus.org"
+    }
+  ],
+  "build_url": "https://github.com/nextstrain/",
+  "colorings": [
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "num_date",
+      "title": "Date",
+      "type": "continuous"
+    },
+    {
+      "key": "clade",
+      "title": "MeV Genotype (Nextstrain)",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "division",
+      "title": "Division",
+      "type": "categorical"
+    },
+    {
+      "key": "dataUseTerms",
+      "title": "Data use terms",
+      "type": "categorical"
+    },
+    {
+      "key": "genotype_ppx",
+      "title": "MeV Genotype (PPX metadata)",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "region",
+    "country",
+    "division"
+  ],
+  "panels": [
+    "tree",
+    "map",
+    "frequencies",
+    "entropy"
+  ],
+  "display_defaults": {
+    "map_triplicate": true,
+    "color_by": "clade"
+  },
+  "filters": [
+    "clade",
+    "region",
+    "country",
+    "author"
+  ],
+  "metadata_columns": [
+    "author"
+  ]
+}
